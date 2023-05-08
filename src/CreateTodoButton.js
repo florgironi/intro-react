@@ -3,7 +3,10 @@ import "./CreateTodoButton.css"
 
 function CreateTodoButton(props){
     return(
-        <button className='button'>
+        <button
+        className='button'
+        onClick={()=>{console.log('click')}}
+        >
             +
         </button>
     );
