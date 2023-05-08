@@ -1,0 +1,8 @@
+.container-list{
+    display: flex;
+    align-items: center;
+}
+.container-list:hover{
+    transform:scale(1.1);
+    transition: transform 1s; 
+}
