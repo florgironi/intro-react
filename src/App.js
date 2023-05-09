@@ -9,7 +9,7 @@ import './App.css';
 
 
 
-const todos = [
+const defaultTodos = [
   { text: 'cortar cebolla', completed: false },
   { text: 'Tomar el curso de react', completed: false },
   { text: 'Ir a Buenos Aires', completed: false }
@@ -17,12 +17,23 @@ const todos = [
 ]
 
 function App() {
+  const [todos,setTodo]= React.useState (defaultTodos)
+  const [searchValue,setSearchValue] = React.useState('') 
+
+  const completedTodos = todos.filter( todo =>
+    !!todo.completed).length;
+  const totalTodos = todos.length
+  
+
   return (
     <div className="container">
       <HeaderDate/>
       <TodoCounter/>
 
-      <TodoSearch/>
+      <TodoSearch
+        searchValue = {searchValue}
+        setSearchValue = {setSearchValue}
+      />
       
       <TodoList>
         {todos.map(todos =>(
