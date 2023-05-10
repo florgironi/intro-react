@@ -19,7 +19,7 @@ function App() {
   const [todos,setTodo]= React.useState (defaultTodos)
   const [searchValue,setSearchValue] = React.useState('') 
 
-  const completedTodos = todos.filter( todo =>!!todo.completed).length;
+  const completedTodos = todos.filter( todo => todo.completed).length;
   const totalTodos = todos.length
   
    // Creamos una nueva variable en donde guardaremos las coincidencias con la búsqueda
