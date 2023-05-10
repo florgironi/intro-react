@@ -1,10 +1,10 @@
 import React from "react";
-import {TodoCounter} from "./TodoCounter";
-import {TodoSearch} from "./TodoSearch";
-import {TodoItem} from "./TodoItem";
-import {CreateTodoButton} from "./CreateTodoButton";
-import {TodoList} from "./TodoList"
-import { HeaderDate } from "./HeaderDate";
+import {TodoCounter} from "../TodoCounter";
+import {TodoSearch} from "../TodoSearch";
+import {TodoItem} from "../TodoItem";
+import {CreateTodoButton} from "../CreateTodoButton";
+import {TodoList} from "../TodoList"
+import { HeaderDate } from "../HeaderDate";
 import './App.css';
 
 
