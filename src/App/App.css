@@ -3,7 +3,7 @@ body{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-image: url("../src/assets/fondo2.jpg");
+  background-image: url("../assets/fondo2.jpg");
 }
 #root{
   height: 100vh;
